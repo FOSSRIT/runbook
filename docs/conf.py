@@ -6,6 +6,8 @@
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/master/config
 
+import sphinx_rtd_theme
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -19,9 +21,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx-docs-opinionated-quickstart'
-copyright = '2018, Justin W. Flory'
-author = 'Justin W. Flory'
+project = 'fossrit-runbook'
+copyright = '2020, Justin W. Flory and others'
+author = 'Justin W. Flory and others'
 
 # The short X.Y version
 version = '1.0'
@@ -83,7 +85,6 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
@@ -115,7 +116,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'sphinx-docs-opinionated-quickstartdoc'
+htmlhelp_basename = 'fossrit-runbookdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -142,7 +143,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'sphinx-docs-opinionated-quickstart.tex', 'sphinx-docs-opinionated-quickstart Documentation',
+    (master_doc, 'fossrit-runbook.tex', 'FOSSRIT Runbook',
      'Justin W. Flory', 'manual'),
 ]
 
@@ -152,7 +153,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sphinx-docs-opinionated-quickstart', 'sphinx-docs-opinionated-quickstart Documentation',
+    (master_doc, 'fossrit-runbook', 'FOSSRIT Runbook',
      [author], 1)
 ]
 
@@ -163,9 +164,13 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'sphinx-docs-opinionated-quickstart', 'sphinx-docs-opinionated-quickstart Documentation',
-     author, 'sphinx-docs-opinionated-quickstart', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc,
+        'fossrit-runbook',
+        'FOSSRIT Runbook',
+        author,
+        'fossrit-runbook',
+        'Documentation and information about the Free and Open Source community at RIT',
+        'Miscellaneous'),
 ]
 
 
