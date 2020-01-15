@@ -11,8 +11,7 @@ jobs:
 notifications:
   irc:
     channels:
-      - "ircs://chat.freenode.net:6697/##jwf"
-      - "ircs://chat.freenode.net:5597/#rit-librecorps"
+      - "ircs://chat.freenode.net:5597/#rit-foss-admin"
     template:
       - "[%{repository_name}:%{branch}@%{commit} - build #%{build_number}] CI %{result}! (%{build_url})"
     on_success: change
