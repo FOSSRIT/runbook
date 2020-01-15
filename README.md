@@ -1,34 +1,40 @@
-sphinx-docs-opinionated-quickstart
-==================================
+FOSS@RIT Runbook
+================
 
-[![License: BSD 3-Clause License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![Build Status](https://travis-ci.com/jwflory/sphinx-docs-opinionated-quickstart.svg?branch=master)](https://travis-ci.com/jwflory/sphinx-docs-opinionated-quickstart)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Build Status](https://travis-ci.org/FOSSRIT/runbook.svg?branch=master)](https://travis-ci.org/FOSSRIT/runbook)
+[![Documentation Status](https://readthedocs.org/projects/fossrit-runbook/badge/?version=latest)](https://runbook.fossrit.community/?badge=latest)
 
-Quick-start, opinionated template repository to add [Sphinx-based documentation](http://www.sphinx-doc.org/) to an existing project
+Documentation and information about the [Free and Open Source community at RIT](https://fossrit.github.io/), facilitated by RIT MAGIC Center
 
 
 ## About
 
-This repository is a working implementation of a documentation toolchain powered by [Sphinx](http://www.sphinx-doc.org/).
-Use these files to quickly set up Sphinx inside of an existing project.
-For convenience, most of the special sauce is inside the `docs/` directory, so you can copy it straight into another project.
+This Runbook documents information about the Rochester Institute of Technology's Free and Open Source community.
+It is a living collection of documents that explain the governance and organization of our community.
+The Runbook is a reference for current and future members of the community to learn about the inner-workings of what we do.
 
-### "But I thought Sphinx had a quickstart tool already."
+### Who is the Runbook for?
 
-Yes, it does.
-But I have opinions.
-And I am lazy.
-So, when I am starting a new project, I want to use a preferred configuration instead of starting from the ground up.
-Sometimes, you may want to start from the ground up.
-So try that first if you like.
+The Runbook is a resource for anyone who wishes to participate in RIT's FOSS community.
+Anyone is welcome to review the Runbook and make suggestions.
 
-But if you are like me, and want to do more writing and less configuring, make your life easier and use a common base.
-This repo is all about getting you to spend more time on what deserves your time, not getting lost in configuration options. :tada:
+The Runbook is officially maintained by FOSS@MAGIC payroll staff.
+However, all members of the community should update their processes or areas of knowledge on an ongoing basis.
 
 
-## About reusing this repo
+## Read the Runbook
 
-This repository is licensed under the [BSD 3-Clause License](https://choosealicense.com/licenses/bsd-3-clause/ "BSD 3-Clause “New” or “Revised” License").
-Reuse anything you want in your own projects.
-If you use this quickstart repo in a public repository, a link back here in your README is appreciated. :+1:
+[**runbook.fossrit.community**](https://runbook.fossrit.community/)
 
+The Runbook is hosted on [ReadTheDocs](https://readthedocs.org/).
+
+
+## Contribute to the Runbook
+
+See [CONTRIBUTING.md](https://github.com/FOSSRIT/runbook/blob/master/.github/CONTRIBUTING.md "How to contribute to the FOSSRIT Runbook").
+
+
+## Legal
+
+All content made available under the [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
