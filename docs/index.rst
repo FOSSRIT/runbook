@@ -14,6 +14,38 @@ For more information, see the `repo on GitHub <https://github.com/FOSSRIT/runboo
 
     about/*
 
+.. toctree::
+    :maxdepth: 2
+    :name: community
+    :caption: Community:
+    :glob:
+
+    community/*
+
+.. toctree::
+    :maxdepth: 2
+    :name: policy
+    :caption: Policy:
+    :glob:
+
+    policy/*
+
+.. toctree::
+    :maxdepth: 2
+    :name: misc
+    :caption: Miscellaneous:
+    :glob:
+
+    misc/*
+
+.. toctree::
+    :maxdepth: 2
+    :name: infra
+    :caption: Infrastructure and services:
+    :glob:
+
+    infra/*
+
 
 ******************
 Indices and tables
