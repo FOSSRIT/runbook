@@ -63,6 +63,51 @@ Other things happening.
 ```
 
 
+## Create a development environment
+
+This website uses [**containers**](https://web.archive.org/web/20200203111523/https://www.docker.com/resources/what-container) for a development environment.
+A container runtime like Docker or Podman works on Linux, macOS, and Windows.
+Containers closely mimic how the production version of the site is deployed.
+This means when you test your changes locally with containers, they will deploy in production successfully.
+This is also how maintainers test new pull requests.
+
+### Pre-requisites
+
+Install one of the following container runtimes:
+
+#### Docker
+
+* Linux
+  * [Fedora](https://developer.fedoraproject.org/tools/docker/docker-installation.html)
+  * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
+<!-- * [Windows](https://docs.docker.com/toolbox/overview/) -->
+
+#### Podman
+
+* [Podman installation instructions](https://podman.io/getting-started/installation)
+
+### Build and serve Jekyll locally
+
+To build the site and serve it as a website from your workstation, run the following script:
+
+```sh
+./build.sh
+```
+
+This script downloads the Jekyll container from Docker Hub, builds the website, and serves it on port 4000.
+Make sure other services are not running on port 4000 when running the script.
+Once the site finishes building, access the local version of the website at this URL:
+
+```
+http://localhost:4000
+```
+
+**PRO-TIP**: Running the script takes a while to install dependencies.
+However, the container continues to rebuild the website so long as the script is still running.
+To take advantage of this, run the `build.sh` script when you first start developing, and leave it running until you are done.
+
+
 ## How to update FOSS Hours time/place
 
 Edit [`_config.yml`](https://github.com/FOSSRIT/fossrit.github.io/blob/master/_config.yml) and update the settings `meeting-day`, `meeting-place`, and `meeting-time`.
@@ -177,7 +222,7 @@ Additionally, the `permalink` property is commonly used to give a more special U
 
 See [2018-01-01-teleirc.md](https://github.com/FOSSRIT/fossrit.github.io/blob/67282a55a6330a5c61397eaeac92ef9c025f0432/projects/_posts/2018-01-01-teleirc.md):
 
-```yaml
+```
 ---
 layout: project
 title: TeleIRC
