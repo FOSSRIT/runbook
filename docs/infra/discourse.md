@@ -25,7 +25,7 @@ This host runs:
 
 This host relies on:
 
-* SendGrid API key (for outgoing mail, eventually incoming)
+* SendGrid API key (for outgoing mail only)
 
 
 ## Deploying
@@ -41,6 +41,13 @@ Our Discourse site was deployed exactly as described in upstream's documentation
 We do not use config files to maintain Discourse.
 The config settings are dynamic and stored inside the image container.
 If a rollback is needed, see [Backups](#backups).
+
+### Firewall
+
+Note that DigitalOcean maintains its own firewall, a layer above the Linux Droplet where the Discourse forum is hosted.
+If adding or changing ports on a DigitalOcean Droplet, make sure the ports you need opened are added to the Droplet firewall in the DigitalOcean admin panel.
+See the [DigitalOcean](digitalocean) page for more information about accessing the admin panel.
+See [FOSSRIT/infrastructure#44](https://github.com/FOSSRIT/infrastructure/issues/44) for additional historical context.
 
 
 ## Upgrading
