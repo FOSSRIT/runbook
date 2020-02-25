@@ -18,6 +18,8 @@ However, the FOSS@RIT identity is not exclusive.
 It is not "owned" by any single group or organization.
 Generally, anyone who works in free/open communities at RIT, not limited to software, is included in this identity.
 
+See Prof. Deejoe's blog post with suggestions on how to get involved with the FOSS@RIT community: [Joining RIT@FOSS](https://web.archive.org/web/20200225161814/http://deejoe.etrumeus.com/update/joining-ritfoss.html)
+
 ### Responsibilities
 
 Responsibilities associated with the FOSS@RIT community are typically on a volunteer basis and informal.
