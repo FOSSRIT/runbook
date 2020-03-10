@@ -220,23 +220,31 @@ Additionally, the `permalink` property is commonly used to give a more special U
 
 #### Example project
 
-See [2018-01-01-teleirc.md](https://github.com/FOSSRIT/fossrit.github.io/blob/67282a55a6330a5c61397eaeac92ef9c025f0432/projects/_posts/2018-01-01-teleirc.md):
+See [2020-03-01-teleirc.md](https://github.com/FOSSRIT/fossrit.github.io/blob/6d11475b205bbb564cb5b284b390b4810bec5d9b/projects/_posts/2020-03-01-teleirc.md):
 
-```
+```yaml
 ---
 layout: project
 title: TeleIRC
 permalink: /projects/teleirc
 authors:
-- Mark Repka (@repkam09, original author)
-- Justin W. Flory (@jwf, current maintainer)
-- Seth Hendrick (@xforever1313)
-- Nate Levesque (@thenaterhood)
-- and others
-excerpt: TeleIRC bridges Telegram groups and IRC channels.
+- Justin W. Flory
+- Kennedy Kong
+- Kevin Assogba
+- Mark Repka
+- Nate Levesque
+- Nicholas Jones
+- Seth Hendrick
+- Tim Zabel
+excerpt: >
+    TeleIRC bridges communication between Telegram groups and IRC channels.
+    This bot was originally written for the RIT Linux Users Group Telegram group and IRC channel.
+    Today, it is used by communities all over the world.
+images:
+- https://ritlug.com/projects/assets/teleirc/logo.svg
 ---
 
-{% include content-blocks/gallery.html %}
+RITlug TeleIRC is a NodeJS implementation of a Telegram <=> IRC bridge.
 
-NodeJS implementation of Telegram <=> IRC bridge…
+{% include content-blocks/gallery.html %}
 ```
