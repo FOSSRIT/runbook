@@ -40,7 +40,7 @@ Whichever system is used, the only critical requirement is a free and easy way f
 
 The ENH needs an event profile on the FOSS@MAGIC website.
 This provides us a static link to share for community outreach and promotion.
-See [Website - How to create events](/infra/website "Scroll down to 'How to create events' section") for how to do this.
+See [Website - How to create event profiles](/infra/website "Scroll down to 'How to create event profiles' section") for how to do this.
 
 ### Promote ENH
 
