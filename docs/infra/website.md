@@ -41,8 +41,30 @@ _All times are of the timezone `America_New_York`._
 
 Additionally, Jekyll uses the string `<!--more-->` to define where the summary of pages end.
 This is used when showing post previews on the site.
-Optionally, the `excerpt` frontmatter can be defined instead to override this (if using an HTML page instead of Markdown in special cases, the `excerpt` frontmatter _should be used_ instead of `<!--more-->`).
+Optionally, the `excerpt` Front Matter can be defined instead to override this (if using an HTML page instead of Markdown in special cases, the `excerpt` Front Matter _should be used_ instead of `<!--more-->`).
 Please use this functionality to keep lists of posts readable.
+
+#### Calendar feed
+
+Jekyll also generates an iCal calendar feed of event announcements, talks, and events.
+This feed is generated at [fossrit.github.io/feeds/calendar.ics](https://fossrit.github.io/feeds/calendar.ics).
+
+Here is the logic for common, notable event properties:
+
+* Titles come from the `title` Front Matter
+* Descriptions come from the page body.
+  Uses summaries if defined with `<!--more-->` (or `excerpt` Front Matter).
+* Dates:
+    * If specified, `date-start` and `date-end` allows manual specification of event date and time
+        * Useful when announcement of an event is not same day as event itself
+        * Also allows specifying start/end times
+    * Otherwise, the date given in the file name is used
+* Locations can be (optionally) specified with the `location` Front Matter
+* URLs:
+    * If `redirect`, gives link directly
+    * If for post, gives post link
+    * Otherwise, gives the [_Get Involved_](https://fossrit.github.io/get-involved/) page by default
+
 
 #### Example post
 
@@ -163,7 +185,7 @@ We are looking for volunteers from the RIT community!
 If you are interested in volunteering with FOSS@MAGIC in the Spring 2020 semester…
 ```
 
-### How to create events
+### How to create event profiles
 
 Events are written before or after an event.
 
@@ -175,7 +197,7 @@ See the example event below for how to do this.
 
 * Create a Markdown file in `events/_posts/` named with the convention `YYYY-MM-DD-<title>.md`
 
-#### Example event
+#### Example event profile
 
 See [2019-11-05-election-night-hackathon.md](https://github.com/FOSSRIT/fossrit.github.io/blob/67282a55a6330a5c61397eaeac92ef9c025f0432/events/_posts/2019-11-05-election-night-hackathon.md):
 
@@ -215,7 +237,7 @@ Some projects use custom HTML (in-line or entirely) to have a better show effect
 If using custom HTML, rememberto set the `excerpt` Front Matter.
 If doing the page entirely in custom HTML, the `layout` should be set to `default`, which includes the FOSSRIT navbar & footer, but not the page background.
 
-The `author`/`authors` frontmatter should be defined.
+The `author`/`authors` Front Matter should be defined.
 Additionally, the `permalink` property is commonly used to give a more special URL.
 
 #### Example project
@@ -247,4 +269,61 @@ images:
 RITlug TeleIRC is a NodeJS implementation of a Telegram <=> IRC bridge.
 
 {% include content-blocks/gallery.html %}
+```
+
+### How to add calendar events
+
+The website has an [interactive calendar](https://fossrit.github.io/calendar/) built in.
+
+Sometimes you want to add an event to the calendar but the details are not yet decided.
+For example, weekly FOSS Hours meetings have a set time and date but typically does not have pictures or a lot of details, since it is an informal gathering.
+**Calendar events** are less formal and do not require as much detail, but they show up on the _Calendar_ page.
+
+This is different from event profiles.
+Event profiles are typically showcases of significant events involving the FOSS@RIT community.
+
+#### How to add calendar events
+
+Create a Markdown file in the `meetings-meetups/_posts/` folder with the file name convention `YYYY-MM-DD-your-title.md` (such as `2020-04-25-imaginerit.md`).
+Additionally, calendar placeholders are highly encouraged to use the `redirect` layout and Front Matter to specify a link for the event.
+
+For example:
+
+```yaml
+---
+layout: redirect
+redirect: https://www.rit.edu/imagine/
+date-start: "2020-04-25 10:00"
+date-end: "2020-04-25 17:00"
+location: "MAGIC Spell Studios"
+title: "Imagine RIT"
+---
+
+Come visit the FOSS@MAGIC booth at the annual Imagine RIT festival!
+Stay tuned for more info closer to the event.
+```
+
+#### How to add recurring calendar events
+
+Calendar events can also take a `rrule` Front Matter for recurring events, written to the [iCal spec](https://icalendar.org/iCalendar-RFC-5545/3-3-10-recurrence-rule.html).
+
+Of particular note:
+
+> The `UNTIL` rule part defines a `DATE` or `DATE-TIME` value that bounds the recurrence rule in an inclusive manner.
+> If the value specified by `UNTIL` is synchronized with the specified recurrence, this `DATE` or `DATE-TIME` becomes the last instance of the recurrence.
+> The value of the `UNTIL` rule part _MUST_ have the same value type as the `DTSTART` property.
+
+For example:
+
+```yaml
+---
+layout: redirect
+redirect: https://fossrit.github.io/about/
+date-start: "2020-01-16 17:00"
+date-end: "2020-01-16 19:00"
+location: "MAGIC Spell Studios MSS-3190"
+title: "FOSS Hours"
+rrule: "FREQ=WEEKLY;UNTIL=20200423T190000"
+---
+Come meet other students and faculty involved with FOSS efforts at RIT!
 ```
