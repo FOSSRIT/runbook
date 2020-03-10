@@ -234,7 +234,7 @@ They are not added to an RSS Feed.
 Like events, projects often use the image gallery.
 
 Some projects use custom HTML (in-line or entirely) to have a better show effect.
-If using custom HTML, rememberto set the `excerpt` Front Matter.
+If using custom HTML, remember to set the `excerpt` Front Matter.
 If doing the page entirely in custom HTML, the `layout` should be set to `default`, which includes the FOSSRIT navbar & footer, but not the page background.
 
 The `author`/`authors` Front Matter should be defined.

@@ -60,7 +60,7 @@ See [Website - How to add projects](/infra/website "Scroll down to 'How to add p
 
 Any event, conference, or show we attend needs an event profile on the FOSS@MAGIC website.
 The website does not support recurring events, so each individual event should get its own profile.
-See [Website - How to create events](/infra/website "Scroll down to 'How to create events' section") for how to do this.
+See [Website - How to create event profiles](/infra/website "Scroll down to 'How to create event profiles' section") for how to do this.
 
 ### Pack inventory for exhibition booth
 
@@ -115,5 +115,5 @@ See [Website - How to create events](/infra/website "Scroll down to 'How to crea
 
 ## Post-event
 
-* Add event photos to event profile on FOSS@MAGIC website (see [Website - How to create events](/infra/website "Scroll down to 'How to create events' section") for help)
+* Add event photos to event profile on FOSS@MAGIC website (see [Website - How to create event profiles](/infra/website "Scroll down to 'How to create event profiles' section") for help)
 * _Optional_: Write a blog post recap of how event went, share blog link on [FOSSRIT Discourse forums](/infra/discourse)
