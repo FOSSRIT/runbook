@@ -74,17 +74,17 @@ Please be mindful for accounts with the character "|".
 You should look at the source because the formatted page does not show "|".
 -->
 
-| Real name        | Email                     | NickServ account | RIT computer account | Cloak                            |
-| ---------------- | ------------------------- | ---------------- | -------------------- | -------------------------------- |
-| Justin W. Flory  | jflory7@gmail.com         | jflory7          | jwf9260              | @rit/foss/captain/fedora.jflory7 |
-| Chris Bitler     | crb2547@rit.edu           | VoidWhisperer    | crb2547              | @rit/foss/student/voidwhisperer  |
-| Adam Hayes       | abraunhayes@gmail.com     | moondoggy        | abhsps               | @rit/alum/moondoggy              |
-| Jennifer Herting | jen@herting.cc            | qwertos          |                      | @rit/alumna/qwertos              |
-| Mike Nolan       | me@michael-nolan.com      | Nolski           | mpn3712              | @rit/foss/alumnus/nolski         |
-| Nate Levesque    | ngl3477@rit.edu           | thenaterhood     | ngl3477              | @rit/alum/thenaterhood           |
-| Aidan Kahrs      | abkahrs@gmail.com         | axk4545          | axk4545              | @rit/ritlug/member/axk4545       |
-| Matt Soucy       | msoucy@csh.rit.edu        | msoucy           | mas5997              | @rit/foss/alumnus/msoucy         |
-| Wilfried Hounyo  | whounyo@gmail.com         | wilfriedE        | weh7221              | @rit/student/wilfriede           |
-| Brendan McGeever | btm4810@rit.edu           | sacratoy         | btm4810              | @rit/foss/student/sacratoy       |
-| Kevin M. Granger | freenode@kevinmgranger.me | KevinMGranger    | kmg2728              | @rit/foss/alum/kevinmgranger     |
-| Christian Martin | ctm2142@rit.edu           | ctmartin         | ctm2142              | @rit/foss/student/ctmartin       |
+| Real name        | NickServ account | RIT computer account | Cloak                            |
+| ---------------- | ---------------- | -------------------- | -------------------------------- |
+| Justin W. Flory  | jflory7          | jwf9260              | @rit/foss/captain/fedora.jflory7 |
+| Chris Bitler     | VoidWhisperer    | crb2547              | @rit/foss/student/voidwhisperer  |
+| Adam Hayes       | moondoggy        | abhsps               | @rit/alum/moondoggy              |
+| Jennifer Herting | qwertos          |                      | @rit/alumna/qwertos              |
+| Mike Nolan       | Nolski           | mpn3712              | @rit/foss/alumnus/nolski         |
+| Nate Levesque    | thenaterhood     | ngl3477              | @rit/alum/thenaterhood           |
+| Aidan Kahrs      | axk4545          | axk4545              | @rit/ritlug/member/axk4545       |
+| Matt Soucy       | msoucy           | mas5997              | @rit/foss/alumnus/msoucy         |
+| Wilfried Hounyo  | wilfriedE        | weh7221              | @rit/student/wilfriede           |
+| Brendan McGeever | sacratoy         | btm4810              | @rit/foss/student/sacratoy       |
+| Kevin M. Granger | KevinMGranger    | kmg2728              | @rit/foss/alum/kevinmgranger     |
+| Christian Martin | ctmartin         | ctm2142              | @rit/foss/student/ctmartin       |
