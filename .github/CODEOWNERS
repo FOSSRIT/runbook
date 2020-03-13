@@ -1,0 +1,34 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners. Order is
+# important; the last matching pattern takes the most precedence.
+
+# These owners will be the default owners for everything in the repo. Unless a
+# later match takes precedence, the default owner is requested for review when
+# someone opens a pull request.
+
+*                       @FOSSRIT/foss-magic @FOSSRIT/tech-team
+
+############################# Filetype catch-alls #############################
+*.css                   @FOSSRIT/tech-team
+*.html                  @FOSSRIT/tech-team
+*.js                    @FOSSRIT/tech-team
+*.py                    @FOSSRIT/tech-team
+*.sh                    @FOSSRIT/tech-team
+###############################################################################
+
+############################### Infrastructure ################################
+/.readthedocs.yml       @FOSSRIT/tech-team
+/.travis.yml            @FOSSRIT/tech-team
+/Pipfile                @FOSSRIT/tech-team
+/Pipfile.lock           @FOSSRIT/tech-team
+/requirements.txt       @FOSSRIT/tech-team
+###############################################################################
+
+################################ Documentation ################################
+/LICENSE.txt            @FOSSRIT/foss-magic
+/docs/about/*           @FOSSRIT/foss-magic
+/docs/community/*       @FOSSRIT/foss-magic
+/docs/infra/*           @FOSSRIT/tech-team
+/docs/infra/ansible.md  @FOSSRIT/ansible-maintainers
+/docs/policy/*          @FOSSRIT/foss-magic
+###############################################################################
