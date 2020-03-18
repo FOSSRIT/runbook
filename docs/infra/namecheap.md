@@ -27,12 +27,16 @@ This is one way to share access to a domain _without_ sharing the password to th
 
 ### fossrit.community
 
+* Expiration: **2025 Jan. 8**
+
 The `fossrit.community` domain is associated with the [Discourse forums](discourse) and this Runbook.
 Currently there is one Domain Manager:
 
 ![Screenshot of Domain Managers for fossrit.community, as of 2020 Feb. 20](/_static/infra/namecheap-fossrit-community-managers.png)
 
 ### teleirc.com
+
+* Expiration: **2022 May 7**
 
 The `teleirc.com` domain is associated with the [TeleIRC project](https://github.com/RITlug/teleirc) managed by the [RIT Linux Users Group](https://ritlug.com).
 This domain is managed by FOSS@MAGIC as a service to RITlug, since TeleIRC is an important part of the FOSS@RIT community infrastructure (see [Chat bridges](bridges)).
@@ -43,9 +47,5 @@ Currently there are two Domain Managers:
 
 ## Billing
 
-**Billing is not yet managed by FOSS@MAGIC.**
-See [FOSSRIT/tasks#110](https://github.com/FOSSRIT/tasks/issues/110) for tracking this.
-New payment options can be added to an account, once signed in, on [this page](https://ap.www.namecheap.com/profile/billing/PaymentCards/AppPayments/Add).
-Once the billing information is updated, this section of the Runbook should be updated:
-
-![Screenshot of Namecheap admin portal with interface for adding a new billing option](/_static/infra/tmp-namecheap-billing.png)
+FOSS@MAGIC covers the expenses for the domain renewals on as needed.
+Namecheap is set up with automatic renewal to the RIT MAGIC Center via an RIT-managed credit card.
