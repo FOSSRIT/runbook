@@ -21,13 +21,16 @@ Currently, three people have access to the shared _FOSS @ RIT MAGIC_ DigitalOcea
 
 ![Screenshot of FOSS @ RIT MAGIC team members from DigitalOcean admin interface](/_static/infra/digitalocean-team-members.png)
 
+### Billing
+
+FOSS@MAGIC covers the expenses for the Droplets on a monthly basis.
+This is set up with automatic billing to the RIT MAGIC Center via an RIT-managed credit card.
+
 
 ## Droplets
 
 Droplets are the billable "unit" in DigitalOcean.
 They represent a specific service or server.
-FOSS@MAGIC covers the expenses for the Droplets on a monthly basis.
-This is set up with automatic billing to the RIT MAGIC Center via an RIT-managed credit card.
 
 ### Services
 
